@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!--LINK A CSS-->
-    <link rel="stylesheet" href="../DENSA_2/sass/css/estilo.css">
+    <link rel="stylesheet" href="../git/sass/css/estilo.css">
 
     <!--GOOGLE FONT-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 
-    <title>DENSA Inicio</title>
+    <!--ANIMACION SCROLLREVEAL-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>DENSA</title>
   </head>
 
   
@@ -25,9 +28,9 @@
   
   <body>
 <!--NAVEGACION y BANNER-->
-<header class="header">
+<header class="header" id="header">
       <div class="bg-dark">
-        <div class="container">
+        <div class="container" id="container">
          
           <nav class="navbar navbar-expand-lg navbar-light">
             
@@ -36,12 +39,12 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navg navbar-nav w-100 justify-content-center"> <!--alineacion central del menu-->
-                <a class="nav-link active" href="index.html">INICIO</a>
+              <div class="navg navbar-nav w-100 justify-content-center"   id="menuRojo"> <!--alineacion central del menu-->
+                <a class="nav-link active" id="botonMenu" href="index.html">INICIO</a>
                 <a class="nav-link" href="sobreNosotros.html">Sobre Nosotros</a>
                 <a class="nav-link" href="proyectos.html">Proyectos</a>
                 <a class="nav-link" href="servicios.html">Servicios</a>
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
               </div>
             </div>
           </nav>
@@ -55,15 +58,15 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8">
-              <div class="text-header__h1">
+              <div class="text-header__h1" data-aos="fade-right">
               <h1>DENSA</h1>
               </div>
-              <div class="text-header__p">
+              <div class="text-header__p" data-aos="fade-right">
               <p>DISEÑO Y ENSAMBLAJES EN SOLIDWORKS Y AUTOCAD</p>
 
 
               </div>
-              <a href="" class="btn btn-yo"><span>Read More</span></a>
+              <a href="sobreNosotros.html" class="btn btn-yo" data-aos="fade-right" ><span>Read More</span></a>
             </div>
           </div>
         </div>
@@ -73,7 +76,7 @@
 
 
 <!--PROYECTOS DESTACADOS-->
-<section id="proyectosDestacados" class="container">
+<section id="proyectosDestacados" class="container"  data-aos="fade-up">
   <div class="text-left">
     
     <h1>PROYECTOS DESTACADOS</h1>
@@ -85,16 +88,16 @@
 
   <div class="row proyectosDestacados">
     <div class="col-lg-4 img1">
-      <a href="">
+      <a href="proyectos.html">
         <h3>MUEBLE INDUSTRIALIZADO</h3></a>
     </div>
     
     <div class="col-lg-4 img2">
-      <a href=""><h3>PROTESIS ATLETICA</h3></a> 
+      <a href="proyectos.html"><h3>PROTESIS ATLETICA</h3></a> 
     </div>
     
     <div class="col-lg-4 img3"> 
-      <a href=""><h3>TRAILER ACERO INOXIDABLE</h3></a>
+      <a href="proyectos.html"><h3>TRAILER ACERO INOXIDABLE</h3></a>
     </div>
     
   </div>
@@ -114,15 +117,18 @@
   <hr class="hr-divider">
   
   <div class="row featurette">
-    <div class="col-md-7">
+    <div class="col-md-7" data-aos="fade-up">
       <h2 class="featurette-heading"> DISEÑO <span class="text-muted">DE PRODUCTOS</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <p class="lead">Nuestro equipo se encuentra altamente capacitado àra realizar trabajos de diseño, por lo cual utilizamos programas de CAD para diseñar cualquier pieza o producto que el cliente necesite.</p>
 
-      <button type="button" class="btn btn-danger botonDiseño">ETAPA DE DISEÑO</button>
-      <!--cada boton redireccionara hacia el canal de youtube con ejemplos de las tareas que se realizan-->
       
+      <a href="https://youtube.com/channel/UCCuys83p8JeARk9DmuVrjAw" data-aos="fade-up">
+        <button type="button" class="btn btn-danger botonDiseño">ETAPA DE DISEÑO</button>
+      <!--cada boton redireccionara hacia el canal de youtube con ejemplos de las tareas que se realizan-->
+      </a>
+
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5" data-aos="fade-up">
       <div class="diseñoImg1">
         <!--imagen-->
       </div>
@@ -133,16 +139,18 @@
   <hr class="hr-divider">
 
   <div class="row featurette">
-    <div class="col-md-7 order-md-2">
+    <div class="col-md-7 order-md-2" data-aos="fade-up">
       <h2 class="featurette-heading">MODELADO<span class="text-muted"> DE IDEAS</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <p class="lead">Si necesitas asesoramiento para tu proyecto o una idea que tengas en mente, nosotros nos encargamos de realizar previamente un sketch o croquis con todos los aspetcos y medidas a tener en cuenta para que tu proyecto funcione. Posteriormente pasamos a la etapa de modelado en computadora.</p>
 
-      <button type="button" class="btn btn-danger botonModelado">MODELADO 3D</button>
+      <a href="https://youtube.com/channel/UCCuys83p8JeARk9DmuVrjAw" data-aos="fade-up">
+            <button type="button" class="btn btn-danger botonModelado">MODELADO 3D</button>
+      </a>
 
     </div>
     <div class="col-md-5 order-md-1">
       
-      <div class="diseñoImg2">
+      <div class="diseñoImg2" data-aos="fade-up">
         <!--imagen-->
       </div>
 
@@ -152,14 +160,18 @@
   <hr class="hr-divider">
 
   <div class="row featurette">
-    <div class="col-md-7">
+    <div class="col-md-7" data-aos="fade-up">
       <h2 class="featurette-heading">RENDERIZADO<span class="text-muted"> DE PROYECTOS</span></h2>
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <p class="lead">Quizas ya tengas tu propio diseño del prodcuto que buscas, pero necesitas llevaro un paso mas hacia la realidad. Mediante avanzados programas nos encargamos de renderizar por completo tu proyecto, para lograr que se vea lo mas real posible.</p>
 
+      <a href="https://youtube.com/channel/UCCuys83p8JeARk9DmuVrjAw" data-aos="fade-up">
       <button type="button" class="btn btn-danger botonRenderizado">RENDERIZADO FINAL</button>
+      
+      </a>
+      
 
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5" data-aos="fade-up">
      
       <div class="diseñoImg3">
         <!--imagen-->
@@ -173,10 +185,10 @@
 
 </div>
 
-<!-- BANNER ANIMADO CON SLOGAN -->
+<!-- BANNER CON SLOGAN -->
 <div class="banner">
   <div class="banner__slogan">
-    <div class="slogan__h4">
+    <div class="slogan__h4" data-aos="fade-right">
       <h4>" SOMOS DENSA, UN UNIVERSO DE IDEAS "</h4>
     </div>
   </div>  
@@ -191,9 +203,7 @@
     <div class="footer__column1">
     <div class="footer__info">
       <h5>MAS INFORMACION</h5>
-      <p>Lorem ipsum dolor sit amet consectetur <br> 
-        adipisicing elit. Officiis debitis numquam dicta <br>
-         minus ex repellendus?</p>
+      <p>DENSA es un emprendimiento que se basa en diseñar y/o renderizar productos, objetos y piezas mediante modelados 3D.Fundados en 2021, nuestro objetivo es ser pioneros en el Modelado 3d en Argentina y adaptarnos al resto del mundo.</p>
     </div> 
 
     
@@ -206,23 +216,23 @@
 
     <div class="column2__logos">
       <div class="column2__row">
-        <img src="../DENSA_2/sass/img/facebook.png" alt="">
-        <a href="">Siguenos en Facebook</a>
+        <img src="../git/sass/img/facebook.png" alt="">
+        <a href="https://www.facebook.com/DENSA-103603561646550/?ti=as">Siguenos en Facebook</a>
       </div>
 
       <div class="column2__row">
-        <img src="../DENSA_2/sass/img/instagram.png" alt="">
-        <a href="">Siguenos en Instagram</a>
+        <img src="../git/sass/img/instagram.png" alt="">
+        <a href="https://instagram.com/densa_ab?igshid=da0uc94h8x18">Siguenos en Instagram</a>
       </div>
 
       <div class="column2__row">
-        <img src="../DENSA_2/sass/img/youtube.png" alt="">
-        <a href="">Siguenos en YouTube</a>
+        <img src="../git/sass/img/youtube.png" alt="">
+        <a href="https://youtube.com/channel/UCCuys83p8JeARk9DmuVrjAw">Siguenos en YouTube</a>
       </div>
 
       <div class="column2__row">
-        <img src="../DENSA_2/sass/img/linkedin.png" alt="">
-        <a href="">Siguenos en linkedin</a>
+        <img src="../git/sass/img/linkedin.png" alt="">
+        <a href="https://www.linkedin.com/in/agust%C3%ADn-barzola-618311174/">Siguenos en Linkedin</a>
       </div>
 
 
@@ -236,18 +246,18 @@
       <h5>Contactos</h5>
     </div>
     <div class="column3__row">
-      <img src="../DENSA_2/sass/img/google-maps.png" alt="">
-      <a href="">Tierra del Fuego 2601, Mendoza, Argentina</a>
+      <img src="../git/sass/img/google-maps.png" alt="">
+      <a href="https://goo.gl/maps/3MyFwK5gTvBYHnHD9">Bº Santucci MB C7, Maipu, Mendoza, Argentina</a>
     </div>
 
     <div class="column3__row">
-      <img src="../DENSA_2/sass/img/gmail.png" alt="">
-      <a href="">densadesign@hmail.com</a>
+      <img src="../git/sass/img/gmail.png" alt="">
+      <a href="www.agustinbarzola73@gmail.com">agustinbarzola73@gmail.com</a>
     </div>
 
     <div class="column3__row">
-      <img src="../DENSA_2/sass/img/smartphone.png" alt="">
-      <a href="">+54 2617104981</a>
+      <img src="../git/sass/img/smartphone.png" alt="">
+      <a href="+542614720632">+54 261 472 0632</a>
     </div>
 
     </div>
@@ -276,7 +286,20 @@
   
 
 
-
+<script>
+  // cuando el usuario haga scroll de 20px desde el top del documento, se cambia el color del header. La medida la podes cambiar vos
+  // está hecho muy básico para que funcione
+  window.onscroll = function() {scrollFunction()};
+  // seria: si el scroll es mayor a 20px el color del header será rosa, sino será transparente
+  //En el css tambien le di background-color:transparent al header así no falla. 
+  function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+      document.getElementById("menuRojo").style.backgroundColor = "#680000a2";
+    } else {
+      document.getElementById("menuRojo").style.backgroundColor = "transparent";
+    }
+  }
+  </script>
 
 
 
@@ -289,6 +312,12 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!--ANIMACION SCROLL REVEAL-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
